@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Patch SteamCollector size and draw size-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamCollector"]/size</xpath>
+        <value>
+            <size>(4,4)</size>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamCollector"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(4,4)</drawSize>
+        </value>
+    </Operation>
+    <!--Patch SteamTradeBeacon (radio tower) to use mask-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SteamTradeBeacon"]/graphicData</xpath>
+        <value>
+            <shaderType>CutoutComplex</shaderType>
+        </value>
+    </Operation>
+    <!--Patch SteamBoiler to new draw size-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamBoiler"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(2,3)</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SteamBoiler"]/graphicData</xpath>
+        <value>
+            <drawOffset>(0,0,0.5)</drawOffset>
+        </value>
+    </Operation>
+    <!--Patch SteamAccumulator to new draw size-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamAccumulator"]/size</xpath>
+        <value>
+            <size>(3,3)</size>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamAccumulator"]/graphicData/drawOffset</xpath>
+        <value>
+            <drawOffset>(0,0,0.5)</drawOffset>
+        </value>
+    </Operation>
+</Patch>
