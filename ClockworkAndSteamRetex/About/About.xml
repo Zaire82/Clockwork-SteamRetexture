@@ -8,9 +8,14 @@
 <modVersion IgnoreIfNoMatchingField="True">1.0</modVersion>
   <packageId>Zaire82.ClockworkAndSteamRetex</packageId>
   <description>
-Retexture for various items from Clockwork and Steam. May work for both 1.5 version and the original, but that is untested.
+A texture overhaul for Clockwork and Steam. May work for both 1.5 version and the original, but that is untested.
 
-I love the premise of the mod, but a lot of the textures stand out far too much from Rimworld's style. This aims to fix that and to redesign some things that looked a bit too ridiculous.
+I'm sure many can agree with the sentiment that CaS's original textures don't suit Rimworld vey well and have inconsistent artstyles. This mod is an attempt to resolve that. Every texture is redone so that it matches better with Rimworld's aesthetic.
+Some things are tweaked to my preference
+
+This mod also functions as a partial bug-fix too. Any bugs that impeded my retextures were resolved so that my textures would function as intended.
+
+I'd like to thank ANNOProfi who helped with some of this bug-fixing. I am not skilled in XML so their assistance was much appreciated.
   </description>
   <modDependencies>
 		<li>
@@ -19,4 +24,7 @@ I love the premise of the mod, but a lot of the textures stand out far too much 
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3316197028</steamWorkshopUrl>
 		</li>
     </modDependencies>
+    <loadAfter>
+      <li>zal.clockworkandsteam</li>
+    </loadAfter>
 </ModMetaData>
