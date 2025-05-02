@@ -20,7 +20,7 @@
         <value>
             <texPath>Things/Item/Manufactured/NeuralApparatus</texPath>
         </value>
-    </Operation><drawSize>0.85</drawSize>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="NeuralApparatus"]/graphicData/drawSize</xpath>
         <value>
