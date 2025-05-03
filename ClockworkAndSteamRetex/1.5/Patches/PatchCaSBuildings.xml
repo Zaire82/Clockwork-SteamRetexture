@@ -13,6 +13,14 @@
             <drawSize>(4,4)</drawSize>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SteamCollector"]/graphicData/shadowData</xpath>
+        <value>
+            <shadowData>
+                <volume>(4,4,4)</volume>
+            </shadowData>
+        </value>
+    </Operation>
     <!--Patch SteamTradeBeacon (radio tower) to use mask-->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="SteamTradeBeacon"]/graphicData</xpath>
@@ -44,6 +52,55 @@
         <xpath>/Defs/ThingDef[defName="SteamAccumulator"]/graphicData/drawOffset</xpath>
         <value>
             <drawOffset>(0,0,0.5)</drawOffset>
+        </value>
+    </Operation>
+    <!--Patch AlloyFurnace to new draw size-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]/size</xpath>
+        <value>
+            <size>(3,3)</size>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(4,4)</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]/graphicData/drawOffset</xpath>
+        <value>
+            <drawOffset>(0,0,0.5)</drawOffset>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]/graphicData/shadowData</xpath>
+        <value>
+            <shadowData>
+                <volume>(3,3,3)</volume>
+            </shadowData>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]</xpath>
+        <value>
+            <hasInteractionCell>True</hasInteractionCell>
+            <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        </value>
+    </Operation>
+    <!--Add Glow and Heat to AlloyFurnace-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="AlloyFurnace"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>20</heatPerSecond>
+				<heatPushMaxTemperature>25</heatPushMaxTemperature>
+			</li>
         </value>
     </Operation>
 </Patch>

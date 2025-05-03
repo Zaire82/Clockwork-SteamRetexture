@@ -3,13 +3,7 @@
 
     <!--Remove Stuff Properties from CaS materials that seem innapropriate-->
     <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="CaS_Coal"]/stuffProps</xpath>
-    </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="CaS_Sulphur"]/stuffProps</xpath>
-    </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="CaS_Nitre"]/stuffProps</xpath>
+        <xpath>/Defs/ThingDef[defName="CaS_Coal" or defName="CaS_Sulphur" or defName="CaS_Nitre"]/stuffProps</xpath>
     </Operation>
 
 </Patch>

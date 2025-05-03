@@ -3,9 +3,28 @@
 
     <!--Add Masks to Tailcoats-->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="tailcoat"]/graphicData</xpath>
+        <xpath>/Defs/ThingDef[defName="Apparel_Tailcoat"]/graphicData</xpath>
         <value>
             <shaderType>CutoutComplex</shaderType>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Apparel_Tailcoat"]/apparel</xpath>
+        <value>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </value>
+    </Operation>
+    <!--Add unique texture to neuralApparatus-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="NeuralApparatus"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Item/Manufactured/NeuralApparatus</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="NeuralApparatus"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>0.55</drawSize>
         </value>
     </Operation>
 
