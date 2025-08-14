@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--Remove Stuff Properties from CaS materials that seem innapropriate-->
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="CaS_Coal" or defName="CaS_Sulphur" or defName="CaS_Nitre"]/stuffProps</xpath>
+    </Operation>
+
+</Patch>
