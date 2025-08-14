@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--Enable vein mine for CaS ores-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CaS_MineableCopper"  or defName="CaS_MineableTin"  or defName="CaS_MineableZinc"  or defName="CaS_MineableRuby"  or 
+            defName="CaS_MineableSappire" or defName="CaS_MineableCoal" or defName="CaS_MineableSulphur" or defName="CaS_MineableNitre"]/building</xpath>
+            <value>
+                <veinMineable>true</veinMineable>
+            </value>
+    </Operation>
+
+</Patch>
