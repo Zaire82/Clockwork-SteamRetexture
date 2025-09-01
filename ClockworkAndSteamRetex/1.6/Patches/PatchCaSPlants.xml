@@ -1,12 +1,98 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <!--Enlarge Silk Bush-->
+    <!--Add immature variants-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plant_SilkBush"]/plant</xpath>
+        <value>
+            <immatureGraphicPath>Things/Item/SilkBush_Immature</immatureGraphicPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plant_Inkleaf"]/plant</xpath>
+        <value>
+            <immatureGraphicPath>Things/Item/Inkleaf_Immature</immatureGraphicPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plant_FlameLily"]/plant</xpath>
+        <value>
+            <immatureGraphicPath>Things/Item/FlameLily_Immature</immatureGraphicPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plant_FrostBerry"]/plant</xpath>
+        <value>
+            <immatureGraphicPath>Things/Item/FrostBerry_Immature</immatureGraphicPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Plant_SolarBlossom"]/plant</xpath>
+        <value>
+            <immatureGraphicPath>Things/Item/SolarBlossom_Immature</immatureGraphicPath>
+        </value>
+    </Operation>
+    <!--Fix plant sizes-->
     <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[defName="Apparel_Tailcoat"]/graphicData/drawSize</xpath>
+        <xpath>/Defs/ThingDef[defName="Plant_SilkBush"]/graphicData/drawSize</xpath>
         <value>
             <drawSize>1</drawSize>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_SilkBush"]/plant/visualSizeRange</xpath>
+        <value>
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_Inkleaf"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>1</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_Inkleaf"]/plant/visualSizeRange</xpath>
+        <value>
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_FlameLily"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>1</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_FlameLily"]/plant/visualSizeRange</xpath>
+        <value>
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_FrostBerry"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>1</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_FrostBerry"]/plant/visualSizeRange</xpath>
+        <value>
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_SolarBlossom"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>1</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Plant_SolarBlossom"]/plant/visualSizeRange</xpath>
+        <value>
+            <visualSizeRange>0.5~1.05</visualSizeRange>
+        </value>
+    </Operation>
+
 
 </Patch>
