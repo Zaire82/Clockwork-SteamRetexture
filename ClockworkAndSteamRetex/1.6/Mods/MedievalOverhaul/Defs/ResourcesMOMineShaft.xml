@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeCopper</defName>
+		<description>Mine deep down underground to obtain pure copper</description>
+		<workAmount>1000</workAmount>
+		<label>mine copper</label>
+		<jobString>Mining 1 copper.</jobString>
+		<products>
+			<CaS_Copper>1</CaS_Copper>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeCopperBulk</defName>
+		<description>Mine deep down underground to obtain pure copper</description>
+		<workAmount>5000</workAmount>
+		<label>mine copper x5</label>
+		<jobString>Mining 5 copper.</jobString>
+		<products>
+			<CaS_Copper>5</CaS_Copper>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeTin</defName>
+		<description>Mine deep down underground to obtain pure tin</description>
+		<workAmount>1000</workAmount>
+		<label>mine tin</label>
+		<jobString>Mining 1 tin.</jobString>
+		<products>
+			<CaS_Tin>1</CaS_Tin>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeTinBulk</defName>
+		<description>Mine deep down underground to obtain pure tin</description>
+		<workAmount>5000</workAmount>
+		<label>mine tin x5</label>
+		<jobString>Mining 5 tin.</jobString>
+		<products>
+			<CaS_Tin>5</CaS_Tin>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeZinc</defName>
+		<description>Mine deep down underground to obtain pure zinc</description>
+		<workAmount>1000</workAmount>
+		<label>mine zinc</label>
+		<jobString>Mining 1 zinc.</jobString>
+		<products>
+			<CaS_Zinc>1</CaS_Zinc>
+		</products>
+	</RecipeDef>
+
+    <RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeZincBulk</defName>
+		<description>Mine deep down underground to obtain pure zinc</description>
+		<workAmount>5000</workAmount>
+		<label>mine zinc x5</label>
+		<jobString>Mining 5 zinc.</jobString>
+		<products>
+			<CaS_Zinc>5</CaS_Zinc>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSulphur</defName>
+		<description>Mine deep down underground to obtain sulphur</description>
+		<workAmount>500</workAmount>
+		<label>mine sulphur x10</label>
+		<jobString>Mining 10 sulphur.</jobString>
+		<products>
+			<CaS_Sulphur>10</CaS_Sulphur>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeNitre</defName>
+		<description>Mine deep down underground to obtain nitre</description>
+		<workAmount>500</workAmount>
+		<label>mine nitre x10</label>
+		<jobString>Mining 10 nitre.</jobString>
+		<products>
+			<CaS_Nitre>10</CaS_Nitre>
+		</products>
+	</RecipeDef>
+
+</Defs>
